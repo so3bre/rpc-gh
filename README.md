@@ -51,12 +51,12 @@ To run the script in the background automatically:
 	```
 
 ## Manage Service
-You can use the provided `rpc-gh-aliases.sh` to control the service easily.
+You can use the provided `aliases-rpc-gh.sh` to control the service easily.
 
 **For a single session:**
 
 ```bash
-source ~/path/to/rpc-gh/rpc-gh-aliases.sh
+source ~/path/to/rpc-gh/aliases-rpc-gh.sh
 ```
 
 **To make these aliases permanent:**
@@ -65,16 +65,16 @@ Append the source command to your shell configuration file (.bashrc for Bash or 
 For Bash:
 
 ```bash
-echo "source ~/path/to/rpc-gh/rpc-gh-aliases.sh" >> ~/.bashrc
+echo "source ~/path/to/rpc-gh/aliases-rpc-gh.sh" >> ~/.bashrc
 ```
 
 For Zsh:
 
 ```bash
-echo "source ~/path/to/rpc-gh/rpc-gh-aliases.sh" >> ~/.zshrc
+echo "source ~/path/to/rpc-gh/aliases-rpc-gh.sh" >> ~/.zshrc
 ```
 
-After doing this, restart your terminal or run source `~/.bashrc` *(or ~/.zshrc)*.
+After doing this, restart your terminal or run `source ~/.bashrc` *(or ~/.zshrc)*.
 
 Then you can use: `rpc-start`, `rpc-stop`, `rpc-status`
 
@@ -87,7 +87,7 @@ Then you can use: `rpc-start`, `rpc-stop`, `rpc-status`
 
 * **rpc-gh.service.example** — Systemd template for background execution.
 
-* **rpc-gh-aliases.sh** — Shortcut commands.
+* **aliases-rpc-gh.sh** — Shortcut commands.
 
 * **logo/** — Assets for Rich Presence.
 
