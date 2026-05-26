@@ -1,0 +1,13 @@
+[Unit]
+Description=GitHub Discord RPC Service
+After=network.target
+
+[Service]
+# Change these paths to the location where you cloned the repository
+WorkingDirectory=/home/YOUR_USER/path/to/rpc-gh/
+ExecStart=/usr/bin/python3 /home/YOUR_USER/path/to/rpc-gh/rpc-gh.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=default.target
