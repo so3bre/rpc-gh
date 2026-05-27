@@ -18,9 +18,9 @@ git clone https://github.com/so3bre/rpc-gh.git && cd rpc-gh
 ```  
 
 ## Setup
-1. **Create App**: Go to the **[Discord Developer Portal](https://discord.com/developers/applications)** and click ***New Application***. You can name it "GitHub" or choose any name you prefer.
+1. **Create App**: Go to the [Discord Developer Portal](https://discord.com/developers/applications) and click "New Application". You can name it "GitHub" or choose any name you prefer.
 
-2. **App Icon**: In ***General Information***, upload the image from the `/assets` folder as your app icon.
+2. **App Icon**: In "General Information", upload the image from the `/assets` folder as your app icon.
 
 ### Asset Configuration
 * **Important**: To ensure the activity logo displays correctly, use a "clearspace" image (padding around the logo).
