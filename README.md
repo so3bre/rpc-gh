@@ -18,7 +18,14 @@ git clone https://github.com/so3bre/rpc-gh.git && cd rpc-gh
 ```  
 
 ## Setup
-Discord Application: Go to the [Discord Developer Portal](https://discord.com/developers/applications), create a new app, and upload an image named github in Rich Presence -> Art Assets.
+1. **Create App**: Go to the **[Discord Developer Portal](https://discord.com/developers/applications)** and click ***New Application***. You can name it "GitHub" or choose any name you prefer.
+
+2. **App Icon**: In ***General Information***, upload the image from the `/assets` folder as your app icon.
+
+### Asset Configuration
+* **Important**: To ensure the activity logo displays correctly, use a "clearspace" image (padding around the logo).
+
+* Ensure that the image you uploaded as your **App Icon** is named `github` (as specified in your `rpc-gh.py` configuration).
 
 ## Configuration
 Copy the example config and edit it with your credentials:
@@ -76,7 +83,7 @@ echo "source ~/path/to/rpc-gh/aliases-rpc-gh.sh" >> ~/.zshrc
 
 After doing this, restart your terminal or run `source ~/.bashrc` *(or ~/.zshrc)*.
 
-Then you can use: `rpc-start`, `rpc-stop`, `rpc-status`
+Then you can use: `rpc-gh-start`, `rpc-gh-stop`, `rpc-gh-status`, `rpc-gh-restart`, `rpc-gh-edit`, `rpc-gh-logs`
 
 ## Architecture
 * **rpc-gh.py** — The main script logic.
@@ -89,7 +96,7 @@ Then you can use: `rpc-start`, `rpc-stop`, `rpc-status`
 
 * **aliases-rpc-gh.sh** — Shortcut commands.
 
-* **logo/** — Assets for Rich Presence.
+* **assets/** — Assets for Rich Presence.
 
 ## License
 MIT
